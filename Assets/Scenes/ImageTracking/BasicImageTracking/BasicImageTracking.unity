@@ -1190,6 +1190,7 @@ GameObject:
   - component: {fileID: 923721517}
   - component: {fileID: 923721516}
   - component: {fileID: 923721515}
+  - component: {fileID: 923721520}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1334,10 +1335,10 @@ MonoBehaviour:
   m_TrackingStateInput:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Tracking State Input
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 9dbd3d9b-a369-4862-a13e-69d3bddb282b
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1469,6 +1470,50 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &923721520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923721513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1338354114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,7 +1586,6 @@ GameObject:
   - component: {fileID: 1413594763}
   - component: {fileID: 1413594762}
   - component: {fileID: 1413594761}
-  - component: {fileID: 1413594760}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -1549,25 +1593,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1413594760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413594759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92dfcdbbdd0754f9fb947d3639ad91c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Images:
-  - m_Texture: {fileID: 2800000, guid: d1879707d69d24adfb421bde69c92c94, type: 3}
-    m_Name: One
-    m_Width: 0.1
-  - m_Texture: {fileID: 2800000, guid: 038b8a7b4862745aaadfd7c9f14e7bbd, type: 3}
-    m_Name: Two
-    m_Width: 0.1
 --- !u!114 &1413594761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,12 +1600,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413594759}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 251f2119baf856b4fbfbdaf563c36383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_WorldSpaceCanvasCamera: {fileID: 0}
+  m_WorldSpaceCanvasCamera: {fileID: 923721519}
   m_DefaultTexture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!114 &1413594762
 MonoBehaviour:
@@ -1596,8 +1621,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: befaf7a54075804479a93d59bb8f3b3f,
     type: 2}
-  m_MaxNumberOfMovingImages: 0
-  m_TrackedImagePrefab: {fileID: 8813279999363715428, guid: bf9cb298a5c98f54ca21903444fefa90,
+  m_MaxNumberOfMovingImages: 1
+  m_TrackedImagePrefab: {fileID: 513367577190350917, guid: 06daea217fa8e1943b1309aad79f64e2,
     type: 3}
 --- !u!114 &1413594763
 MonoBehaviour:
@@ -2168,10 +2193,10 @@ MonoBehaviour:
   m_TrackingStateAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: f1dd141b-7508-4b99-95d2-6f6cd346674f
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2200,10 +2225,10 @@ MonoBehaviour:
   m_SelectActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Select Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 803f8c63-d13b-4a1f-93cd-fbd7b7bfece9
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2224,10 +2249,10 @@ MonoBehaviour:
   m_ActivateActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Activate Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 0e5875fd-ba09-4f47-b70e-558fbdd09dff
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2264,10 +2289,10 @@ MonoBehaviour:
   m_UIPressActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: UI Press Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: efb0dc47-2459-484f-a5d1-30f33764751c
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2300,10 +2325,10 @@ MonoBehaviour:
   m_DirectionalAnchorRotationAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Directional Anchor Rotation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: d1a50c66-e394-4de1-a5c9-c1ad04614736
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
